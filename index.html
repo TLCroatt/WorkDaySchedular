@@ -30,15 +30,64 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="row time-block">
+        <div class="col-1 hour">9:00 am</div>
+        <textarea class="col-10 time-block description" id = "9:00" placeholder = "Enter note here"></textarea>
+        <button class="col-1 saveBtn">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-1 hour">10:00 am</div>
+        <textarea class="col-10 time-block description" id = "10:00" placeholder = "Enter note here"></textarea>
+        <button class="col-1 saveBtn">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-1 hour">11:00 am</div>
+        <textarea class="col-10 time-block description" id = "11:00" placeholder = "Enter note here"></textarea>
+        <button class="col-1 saveBtn">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-1 hour">12:00 pm</div>
+        <textarea class="col-10 time-block description" id = "12:00" placeholder = "Enter note here"></textarea>
+        <button class="col-1 saveBtn">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-1 hour">1:00 pm</div>
+        <textarea class="col-10 time-block description" id = "13:00" placeholder = "Enter note here"></textarea>
+        <button class="col-1 saveBtn">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-1 hour">2:00 pm</div>
+        <textarea class="col-10 time-block description" id = "14:00" placeholder = "Enter note here"></textarea>
+        <button class="col-1 saveBtn">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-1 hour">3:00 pm</div>
+        <textarea class="col-10 time-block description" id = "15:00" placeholder = "Enter note here"></textarea>
+        <button class="col-1 saveBtn">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-1 hour">4:00 pm</div>
+        <textarea class="col-10 time-block description" id = "16:00" placeholder = "Enter note here"></textarea>
+        <button class="col-1 saveBtn">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-1 hour">5:00 pm</div>
+        <textarea class="col-10 time-block description" id = "17:00" placeholder = "Enter note here"></textarea>
+        <button class="col-1 saveBtn">Save</button>
+      </div>
     </div>
 
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="moment/moment.min.js"></script>
+    <script src="script.js"></script>
     <script>
+      moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
       console.log(moment());
     </script>
     
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
   </body>
 </html>
