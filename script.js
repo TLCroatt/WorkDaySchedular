@@ -58,16 +58,19 @@ $(document).ready(function () {
     //console.log(new Date($.now()));
     //console.log(typeof now)
     //console.log(now)
-    $(".timeBlock").each(function() {
+    $(".description").each(function() {
         var blockHour = parseInt($(this).attr("id").split("-")[1]);
-        if (currentHour > timeID[i]) {
-            $("textarea").addClass("past");
+        if (currentHour > blockHour) {
+            $(this).addClass("past");
             console.log("past");
-        } else if (currentHour >= timeID[i] && now < time[i]++) {
-            $("textarea").addClass("present");
+        } else if (currentHour === blockHour) {
+            $(this).remove("past");
+            $(this).addClass("present");
             console.log("present");
-        } else if (currentHour < timeID[i]) {
-            $("textarea").addClass("future");
+        } else if (currentHour < blockHour) {
+            $(this).remove("past");
+            $(this).remove("present");
+            $(this).addClass("future");
            console.log("future");
         }
             
