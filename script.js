@@ -13,7 +13,7 @@ $(document).ready(function () {
     displayDate()
 
     var toDoItem = []
-    let timeID = document.getElementById("id");
+    let timeID = [document.getElementById("id")];
 
     //retreive saved items from local storage
     if (localStorage.getItem("items") !== null) {
@@ -51,19 +51,20 @@ $(document).ready(function () {
 
 
     //loop through time divs - if id > than current time, change colors
-    let newDate = new Date(currentDay);
-    let now = newDate.getHours();
+    let now = new Date($.now());
+    console.log(new Date($.now()));
+
     for (var i = 0; i < timeID.length; i++) {
         if (now > timeID[i]) {
-            $("#textarea").addClass("past");
+            $("textarea").addClass("past");
             console.log("past");
-        } //else if (now >= time[i] && now < time[i]++) {
-            //$("#textarea").addClass("present");
-            //console.log("present");
-        //} else if (now < time[i]) {
-           // $("#textarea").addClass("future");
-           // console.log("future");
-       // }
+        } else if (now >= time[i] && now < time[i]++) {
+            $("textarea").addClass("present");
+            console.log("present");
+        } else if (now < time[i]) {
+            $("textarea").addClass("future");
+           console.log("future");
+        }
             
 
     };
