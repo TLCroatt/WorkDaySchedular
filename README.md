@@ -28,5 +28,8 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 ```
+![Demo of Work Day Schedular](https://drive.google.com/file/d/1OoEyHCqe7Mlck3XSElY2DEdStQsZ48ma/view)
 
+github repo: https://github.com/TLCroatt/WorkDaySchedular
 
+deployed app: https://tlcroatt.github.io/WorkDaySchedular/
