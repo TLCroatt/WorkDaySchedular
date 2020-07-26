@@ -12,8 +12,9 @@ $(document).ready(function () {
     }
     displayDate()
 
-    var toDoItem = []
-    let timeID = [document.getElementById("id")];
+    let toDoItem = []
+    let timeID = document.getElementById("id");
+    console.log(timeID);
 
     //retreive saved items from local storage
     if (localStorage.getItem("items") !== null) {
@@ -41,9 +42,9 @@ $(document).ready(function () {
             var hours = $(this).siblings("textarea").attr("id");
             var object = {};
             object[hours] = text;
-            console.log(text, hours);
+            //console.log(text, hours);
             toDoItem.push(object);
-            console.log(toDoItem);
+            //console.log(toDoItem);
             localStorage.setItem("items", JSON.stringify(toDoItem));
 
          }
@@ -51,23 +52,27 @@ $(document).ready(function () {
 
 
     //loop through time divs - if id > than current time, change colors
-    let now = new Date($.now());
-    console.log(new Date($.now()));
-
-    for (var i = 0; i < timeID.length; i++) {
-        if (now > timeID[i]) {
+    let currentHour = moment().hours();
+    console.log(currentHour)
+    //let now = new Date($.now());
+    //console.log(new Date($.now()));
+    //console.log(typeof now)
+    //console.log(now)
+    $(".timeBlock").each(function() {
+        var blockHour = parseInt($(this).attr("id").split("-")[1]);
+        if (currentHour > timeID[i]) {
             $("textarea").addClass("past");
             console.log("past");
-        } else if (now >= time[i] && now < time[i]++) {
+        } else if (currentHour >= timeID[i] && now < time[i]++) {
             $("textarea").addClass("present");
             console.log("present");
-        } else if (now < time[i]) {
+        } else if (currentHour < timeID[i]) {
             $("textarea").addClass("future");
            console.log("future");
         }
             
 
-    };
+    });
 
 
 
