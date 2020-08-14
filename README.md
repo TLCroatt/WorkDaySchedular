@@ -28,7 +28,7 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 ```
-<img width="300" alt="WorkDaySchedular" src="https://user-images.githubusercontent.com/66500773/90269466-e7089400-de15-11ea-83eb-3cee8a75892e.png">
+<img width="500" alt="WorkDaySchedular" src="https://user-images.githubusercontent.com/66500773/90269466-e7089400-de15-11ea-83eb-3cee8a75892e.png">
 
 github repo: https://github.com/TLCroatt/WorkDaySchedular
 
