@@ -7,7 +7,7 @@ A simple calendar application that allows the user to save events for each hour 
 * [Contributing](#contributing)
 * [Features](#features)
 * [Status](#status)
-* [Licensing](#licensing)
+* [License](#license)
 
 ## General info
 A simple calendar application that allows the user to save events for each hour of the day. This app runs in the browser and dynamically saves and stores appointments.
