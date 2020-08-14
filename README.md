@@ -1,35 +1,42 @@
-# WorkDaySchedular
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+# Work Day Schedular
+A simple calendar application that allows the user to save events for each hour of the day. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+## Table of contents
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Contributing](#contributing)
+* [Features](#features)
+* [Status](#status)
+* [Licensing](#licensing)
 
-## User Story
+## General info
+A simple calendar application that allows the user to save events for each hour of the day. This app runs in the browser and dynamically saves and stores appointments.
 
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+## Screenshots
 
-## Acceptance Criteria
-
-```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
 <img width="1000" alt="WorkDaySchedular" src="https://user-images.githubusercontent.com/66500773/90269466-e7089400-de15-11ea-83eb-3cee8a75892e.png">
+
+## Contributing
+* https://tlcroatt.github.io/WorkDaySchedular/
+* https://jquery.com/
+* https://momentjs.com/
+* https://getbootstrap.com/
+* https://fonts.google.com/
+
+
+## Features
+* Displays current date and time
+* Changes color of time blocks based on time of day
+* Saves and stores input
+* Displays saved input when page is refreshed
+
+
+## Status
+Project is: _finished_
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
 github repo: https://github.com/TLCroatt/WorkDaySchedular
 
-deployed app: https://tlcroatt.github.io/WorkDaySchedular/
+
